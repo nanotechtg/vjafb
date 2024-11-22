@@ -1,7 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import logging, asyncio, os, re, random, pytz, aiohttp, requests, string, json, http.client
 from info import *
 from imdb import Cinemagoer 
@@ -46,7 +42,6 @@ class temp(object):
     SHORT = {}
     SETTINGS = {}
     IMDB_CAP = {}
-
 
 async def pub_is_subscribed(bot, query, channel):
     btn = []
@@ -475,8 +470,6 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
-
-
 
 async def get_clone_shortlink(link, url, api):
     shortzy = Shortzy(api_key=api, base_site=url)
