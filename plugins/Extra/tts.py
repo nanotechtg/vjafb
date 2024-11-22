@@ -1,8 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-
 import traceback
 from asyncio import get_running_loop
 from io import BytesIO
@@ -17,7 +12,7 @@ def convert(text):
     i = Translator().translate(text, dest="en")
     lang = i.src
     tts = gTTS(text, lang=lang)
-    audio.name = lang + ".mp3"
+    audio.name = lang + " audio.mp3"
     tts.write_to_fp(audio)
     return audio
 
