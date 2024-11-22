@@ -1,7 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import os, logging, string, asyncio, time, re, ast, random, math, pytz, pyrogram
 from datetime import datetime, timedelta, date, time
 from Script import script
@@ -70,7 +66,7 @@ async def give_filter(client, message):
         if total_results == 0:
             return
         else:
-            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. \n\nTʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nJᴏɪɴ ᴀɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ - https://t.me/vj_bots</b>")
+            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. \n\nTʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nJᴏɪɴ ᴀɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ - https://t.me/moviesnserieszone/b>")
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
@@ -83,7 +79,7 @@ async def pm_text(bot, message):
         reply_msg = await bot.send_message(message.from_user.id, f"<b><i>Searching For {content} 🔍</i></b>", reply_to_message_id=message.id)
         await auto_filter(bot, content, message, reply_msg, ai_search)
     else:
-        await message.reply_text(text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/vj_bots>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/vj_bots")]]))
+        await message.reply_text(text=f"<b>ʜᴇʏ {user} ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ\nᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/moviesnserieszone")]]))
         await bot.send_message(chat_id=LOG_CHANNEL, text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>")
 
 @Client.on_callback_query(filters.regex(r"^next"))
@@ -272,7 +268,7 @@ async def years_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ",
                 show_alert=True,
             )
     except:
@@ -438,7 +434,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ",
                 show_alert=True,
             )
     except:
@@ -501,7 +497,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ",
                 show_alert=True,
             )
     except:
@@ -669,7 +665,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱ",
                 show_alert=True,
             )
     except:
@@ -772,7 +768,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ",
                 show_alert=True,
             )
     except:
@@ -944,7 +940,7 @@ async def qualities_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ",
                 show_alert=False,
             )
     except:
@@ -1002,7 +998,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ",
                 show_alert=False,
             )
     except:
@@ -1971,28 +1967,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     
     elif query.data == "help":
-        buttons = [[
-             InlineKeyboardButton('⚙️ ᴀᴅᴍɪɴ ᴏɴʟʏ 🔧', callback_data='admin'),
-         ], [ 
-             InlineKeyboardButton('ʀᴇɴᴀᴍᴇ', callback_data='r_txt'),   
-             InlineKeyboardButton('sᴛʀᴇᴀᴍ/ᴅᴏᴡɴʟᴏᴀᴅ', callback_data='s_txt') 
-         ], [ 
+        buttons = [[ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),   
-             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele') 
-         ], [ 
-             InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct'), 
-             InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters')
+             InlineKeyboardButton('ɪᴍᴀɢᴇ ᴛᴏ ᴜʀʟ', callback_data='tele') 
          ], [
-             InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'), 
-             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
-         ], [
-             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
-             InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data='shortlink_info')
-         ], [
-             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
-             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json')
+             InlineKeyboardButton('ʏᴏᴜᴛᴜʙᴇ ᴅʟ', callback_data='ytdl'), 
+             InlineKeyboardButton('ꜱᴏɴɢ ᴅʟ', callback_data='song'))
          ], [             
-             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+             InlineKeyboardButton('ＢＡＣＫ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -2007,9 +1989,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url="https://github.com/VJBots/VJ-FILTER-BOT")
-        ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
         ]]
@@ -2311,10 +2290,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
 )
     elif query.data == "share":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
+                  ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2327,10 +2305,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "song":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
+                  ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2368,10 +2345,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
 )
     elif query.data == "sticker":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2384,10 +2360,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "tamil_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2400,10 +2375,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "english_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2416,10 +2390,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "hindi_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2432,10 +2405,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "telugu_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2448,10 +2420,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "malayalam_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2464,10 +2435,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "urdu_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2480,10 +2450,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "bangladesh_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
 
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2497,10 +2466,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "kannada_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -2513,10 +2481,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "gujarati_info":
-            btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
-                  ]]
+            btn = [
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+            ]
         
             await client.edit_message_media(
                 query.message.chat.id, 
