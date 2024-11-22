@@ -1,14 +1,7 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-
 from __future__ import unicode_literals
-
 import os, requests, asyncio, math, time, wget
 from pyrogram import filters, Client
 from pyrogram.types import Message
-
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
@@ -33,13 +26,13 @@ async def song(client, message):
         thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
-        performer = f"[VJ NETWORKS™]" 
+        performer = f"[FiLiMHOUSE™]" 
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
     except Exception as e:
         print(str(e))
-        return await m.edit("Example: /song vaa vaathi song")
+        return await m.edit("Example: /song Puzu Pulikal song")
                 
     await m.edit("**dσwnlσαdíng чσur ѕσng...!**")
     try:
@@ -48,7 +41,7 @@ async def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
 
-        cap = "**BY›› [VJ NETWORKS™](https://t.me/vj_bots)**"
+        cap = "BY-@FiLiMHOUSE"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
